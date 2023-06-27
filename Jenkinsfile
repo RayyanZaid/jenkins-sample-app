@@ -8,6 +8,9 @@ pipeline {
         }
 
         stage('Run main.py') {
+            when {
+                branch "fix-*"
+            }
             steps {
                 bat "python main.py"
             }
