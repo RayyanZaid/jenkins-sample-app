@@ -12,11 +12,12 @@ pipeline {
                 branch "fix-*"
             }
 
+            stage('Display README') {
             steps {
-                sh '''
-                    cat README.md
-                '''
+                // Display the contents of README.md (for Windows)
+                bat 'type README.md'
             }
+        }
         }
     }
 }
