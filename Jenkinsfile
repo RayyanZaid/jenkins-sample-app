@@ -7,17 +7,10 @@ pipeline {
             }
         }
 
-        stage('cat README') {
-            when {
-                branch "fix-*"
-            }
-
-            stage('Display README') {
+        stage('Run main.py') {
             steps {
-                // Display the contents of README.md (for Windows)
-                bat 'type README.md'
+                bat "python main.py"
             }
-        }
         }
     }
 }
