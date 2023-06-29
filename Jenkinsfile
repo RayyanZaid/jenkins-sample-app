@@ -8,7 +8,7 @@ pipeline {
                 // Add any necessary build steps here (e.g., installing dependencies)
             }
         }
-        
+      
         stage('Unit Test') {
             steps {
                 echo 'Running unit tests...'
@@ -34,5 +34,6 @@ pipeline {
             echo 'Some tests failed. Check the test reports for details.'
             // Additional actions to perform on failure
         }
+
     }
 }

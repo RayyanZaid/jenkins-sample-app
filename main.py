@@ -1,3 +1,4 @@
+
 from typing import List
 
 def maxProbability(n: int, edges: List[List[int]], succProb: List[float], start: int, end: int) -> float:
@@ -105,3 +106,4 @@ def maxProbability(n: int, edges: List[List[int]], succProb: List[float], start:
 
 print(maxProbability(n = 5, edges = [[1,4],[2,4],[0,4],[0,3],[0,2],[2,3]], succProb = [0.37,0.17,0.93,0.23,0.39,0.04], start = 3, end = 4))
         
+
