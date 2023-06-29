@@ -5,14 +5,14 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building the project...'
-                // You can add any necessary build steps here (e.g., installing dependencies)
+                // Add any necessary build steps here (e.g., installing dependencies)
             }
         }
         
         stage('Unit Test') {
             steps {
                 echo 'Running unit tests...'
-                sh 'python -m unittest discover -s tests -p "test_*.py"'
+                bat 'python -m unittest discover -s tests -p "test_*.py"'
             }
         }
     }
