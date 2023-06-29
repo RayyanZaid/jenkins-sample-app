@@ -22,7 +22,12 @@ pipeline {
         
         success {
             echo 'All tests passed!'
-            // Additional actions to perform on success
+
+            bat 'git config --global user.email "rayyanzaid0401@gmail.com"'
+            bat 'git config --global user.name "RayyanZaid"'
+            bat 'git checkout master'
+            bat 'git merge --no-ff %BRANCH_NAME%'
+            bat 'git push origin master'
         }
         
         failure {
