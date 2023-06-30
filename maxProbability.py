@@ -29,7 +29,7 @@ def maxProbability(n: int, edges: List[List[int]], succProb: List[float], start:
 
         i+=1
 
-    print(nodeToNeighbors)
+
 
 
     def bfs():
